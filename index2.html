@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sapphire Escape Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TITLE SCREEN -->
+    <div id="title-screen" class="screen">
+        <img src="assets/img1.jpg" class="bg">
+        <button id="startBtn" class="btn">START</button>
+    </div>
+
+    <!-- GAME SCREEN -->
+    <div id="game-screen" class="screen hidden">
+        <img id="roomImage" class="bg">
+
+        <div id="inventory">
+            <h3>Inventory</h3>
+            <ul id="inventoryList"></ul>
+        </div>
+
+        <div id="messageBox"></div>
+    </div>
+
+    <!-- END SCREEN -->
+    <div id="end-screen" class="screen hidden">
+        <img src="assets/img7.jpg" class="bg">
+        <button id="restartBtn" class="btn">PLAY AGAIN</button>
+    </div>
+
+    <audio id="bgm" loop>
+        <source src="assets/sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
